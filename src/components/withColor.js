@@ -1,13 +1,10 @@
 import React from "react";
 
-const withColor = (WrappedComponent) => {
-    class WithColor extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                color: "white",
-            };
-        }
+export function withColor(WrappedComponent) {
+    return class extends React.Component {
+        state = {
+            color: "white",
+        };
 
         toggleColor = () => {
             this.setState(
@@ -27,9 +24,7 @@ const withColor = (WrappedComponent) => {
                 />
             );
         }
-    }
-
-    return WithColor;
-};
+    };
+}
 
 export default withColor;

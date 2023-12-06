@@ -1,4 +1,6 @@
 // Create a Pure Component called ColorButton. It should have a button that changes the background color
+// React docs recommends to use function components  for Pure Components
+
 import React, { PureComponent } from "react";
 import withColor from "./withColor";
 
