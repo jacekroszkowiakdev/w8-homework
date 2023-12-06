@@ -1,5 +1,5 @@
 import "./App.css";
-import ColorButton from "./components/ColorButton.component";
+import ColorButton from "./components/ColorButton";
 
 function App() {
     return (
